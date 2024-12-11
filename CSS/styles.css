@@ -1,0 +1,77 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; 
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: #333; 
+    margin: 20px 0;
+}
+
+/* Contenedor que organiza las secciones en filas o columnas */
+.container {
+    display: flex; 
+    justify-content: space-around; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en filas */
+    padding: 20px;
+}
+
+/* Estilos para cada sección de figura */
+.figure {
+    background-color: #3a3a8a; 
+    color: white; 
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 30%; /* Ancho relativo */
+    min-width: 250px; /* Ancho mínimo */
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+/* Estilo para las imágenes de las figuras */
+.figure img {
+    width: 100px; /* Ancho de las imágenes */
+    height: 100px; /* Alto de las imágenes */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    text-align: left; 
+}
+
+/* Estilo para los campos de entrada */
+input {
+    width: 90%;
+    padding: 10px; /* Espaciado interno */
+    margin: 5px 0 15px; /* Margen entre los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+}
+
+/* Estilo para los botones */
+button {
+    margin: 10px;
+    padding: 10px 20px; /* Espaciado interno */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #ff8c00; 
+    color: white; 
+    cursor: pointer; /* Cambiar el cursor a mano al pasar por encima */
+    font-size: 14px;
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+button:hover {
+    background-color: #ff6200; 
+}

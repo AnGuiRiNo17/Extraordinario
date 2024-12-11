@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Figures</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Título principal de la página -->
+    <h1>Geometric Figures</h1>
+
+    <!-- Contenedor principal que organiza las secciones de cada figura geométrica -->
+    <div class="container">
+
+        <!-- Sección para el cuadrado -->
+        <div class="figure" id="square">
+            <!-- Imagen representando el cuadrado -->
+            <img src="images/square.png" alt="Square">
+            <!-- Subtítulo para la sección del cuadrado -->
+            <h2>Calculate the area and perimeter of a square</h2>
+            <!-- Etiqueta para la entrada del lado del cuadrado -->
+            <label for="square-side">How long is each side?</label>
+            <!-- Entrada de texto para ingresar la longitud del lado -->
+            <input type="text" id="square-side" placeholder="Enter side length">
+            <!-- Botón para calcular el perímetro del cuadrado -->
+            <button onclick="calculateSquare('perimeter')">Calculate perimeter</button>
+            <!-- Botón para calcular el área del cuadrado -->
+            <button onclick="calculateSquare('area')">Calculate area</button>
+            <!-- Botón para reiniciar los campos de entrada -->
+            <button onclick="resetFields('square-side')">Reset</button>
+        </div>
+
+        <!-- Sección para el círculo -->
+        <div class="figure" id="circle">
+            <!-- Imagen representando el círculo -->
+            <img src="images/circle.png" alt="Circle">
+            <!-- Subtítulo para la sección del círculo -->
+            <h2>Calculate the area and perimeter of a circle</h2>
+            <!-- Etiqueta para la entrada del radio del círculo -->
+            <label for="circle-radius">How long is the radius?</label>
+            <!-- Entrada de texto para ingresar la longitud del radio -->
+            <input type="text" id="circle-radius" placeholder="Enter radius">
+            <!-- Botón para calcular el perímetro del círculo -->
+            <button onclick="calculateCircle('perimeter')">Calculate perimeter</button>
+            <!-- Botón para calcular el área del círculo -->
+            <button onclick="calculateCircle('area')">Calculate area</button>
+            <!-- Botón para reiniciar los campos de entrada -->
+            <button onclick="resetFields('circle-radius')">Reset</button>
+        </div>
+
+        <!-- Sección para el triángulo -->
+        <div class="figure" id="triangle">
+            <!-- Imagen representando el triángulo -->
+            <img src="images/triangle.png" alt="Triangle">
+            <!-- Subtítulo para la sección del triángulo -->
+            <h2>Calculate the area and perimeter of a triangle</h2>
+            <!-- Etiqueta para el primer lado del triángulo -->
+            <label for="triangle-side1">How long is the first side?</label>
+            <input type="text" id="triangle-side1" placeholder="First side">
+            <!-- Etiqueta para el segundo lado del triángulo -->
+            <label for="triangle-side2">How long is the second side?</label>
+            <input type="text" id="triangle-side2" placeholder="Second side">
+            <!-- Etiqueta para la base del triángulo -->
+            <label for="triangle-base">How long is the base?</label>
+            <input type="text" id="triangle-base" placeholder="Base">
+            <!-- Etiqueta para la altura del triángulo -->
+            <label for="triangle-height">How long is the height?</label>
+            <input type="text" id="triangle-height" placeholder="Height">
+            <!-- Botón para calcular el perímetro del triángulo -->
+            <button onclick="calculateTriangle('perimeter')">Calculate perimeter</button>
+            <!-- Botón para calcular el área del triángulo -->
+            <button onclick="calculateTriangle('area')">Calculate area</button>
+            <!-- Botón para reiniciar los campos de entrada -->
+            <button onclick="resetFields('triangle-side1', 'triangle-side2', 'triangle-base', 'triangle-height')">Reset</button>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
